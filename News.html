@@ -28,14 +28,14 @@ table tr:nth-child(even) {
 <div ng-include="'https://news.google.com/news.php'"></div>
 
 <script>
-var app = angular.module('myApp', [])
-
-app.config(function($sceDelegateProvider) {
+  var app = angular.module('myApp', [])
+  app.config(function($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
     'https://news.microsoft.com/**',
     'https://news.google.com/**'
-  ]);
-});s
+    ]);
+  });
+</script>
 
 </body>
 </html>

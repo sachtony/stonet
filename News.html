@@ -25,7 +25,7 @@ table tr:nth-child(even) {
 <body id="sachtony">
 
 
-<div ng-include="'https://news.google.com/news.php'"></div>
+<div id="News" ng-include="'https://news.google.com/news.php'"></div>
 
 <script>
   var app = angular.module('myApp', [])
@@ -35,6 +35,19 @@ table tr:nth-child(even) {
     'https://news.google.com/**'
     ]);
   });
+</script>
+<script>
+  function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("News").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "News.html", true);
+  xhttp.send();
+  }
 </script>
 
 </body>

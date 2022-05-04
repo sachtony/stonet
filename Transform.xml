@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+  
+<h:table xmlns:h="http://www.w3.org/TR/html4/">
+    <h:tr>
+      <h:td>Apples</h:td>
+      <h:td>Microsoft</h:td>
+      <h:td>Google</h:td>
+    </h:tr>
+  </h:table>
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 </xsl:stylesheet>

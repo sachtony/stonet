@@ -57,24 +57,27 @@ table tr:nth-child(even) {
 <section>
   <nav>
     <ul>
-      <li><a href="#Microsoft">Microsoft</a></li>
-      <li><a href="#Google">Google</a></li>
-      <li><a href="#Apple">Apple</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#world">World</a></li>
+      <li><a href="#entertainment">Entertainment</a></li>
+      <li><a href="#business">Business</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#weather">Weather</a></li>
     </ul>
   </nav>
   
   <article>
-    <h1>Microsoft</h1>
-    <p><a href="https://sachtony.wordpress.com/2022/02/28/microsoft-threat-protection-stops-attack-sprawl-and-auto-heals-enterprise-assets-with-built-in-intelligence-and-automation/" target="_top">Microsoft Threat Protection stops attack sprawl and auto-heals enterprise assets with built-in intelligence and automation</a></p>
+    <h1>Technology</h1>
+    <p><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2kzd1BHaUJSSDNRaC1Fd3NBYklTZ0FQAQ?hl=en-US&gl=US&ceid=US%3Aen" target="_top">Apple, Google, Microsoft commit to passwordless sign-in</a></p>
   </article>
 </section>
 
-<div id="News" ng-include="'https://news.google.com/news.php'">
+<div id="News" ng-include="'https://news.google.com/include.php'">
   
 </div>
 
 <script>
-  var app = angular.module('myApp', [])
+  var app = angular.module('myApp', [news])
   app.config(function($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
     'https://news.microsoft.com/**',

@@ -10,6 +10,36 @@
   <script src="https://kit.fontawesome.com/6380ada59c.js" crossorigin="anonymous"></script>
 </head>
 <style>
+ /* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
 table, th , td  {
   border: 1px solid grey;
   border-collapse: collapse;
@@ -24,6 +54,20 @@ table tr:nth-child(even) {
 </style>
 <body id="sachtony">
 
+<section>
+  <nav>
+    <ul>
+      <li><a href="#Microsoft">Microsoft</a></li>
+      <li><a href="#Google">Google</a></li>
+      <li><a href="#Apple">Apple</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Microsoft</h1>
+    <p><a href="https://sachtony.wordpress.com/2022/02/28/microsoft-threat-protection-stops-attack-sprawl-and-auto-heals-enterprise-assets-with-built-in-intelligence-and-automation/" target="_top">Microsoft Threat Protection stops attack sprawl and auto-heals enterprise assets with built-in intelligence and automation</a></p>
+  </article>
+</section>
 
 <div id="News" ng-include="'https://news.google.com/news.php'">
   

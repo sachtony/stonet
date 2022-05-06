@@ -100,16 +100,16 @@ table tr:nth-child(even) {
 
 <div ng-app="myApp" ng-controller="payCtrl"> 
 
-<table>
-  <tr ng-repeat="x in account">
-    <td>{{ x.sender }}</td>
-    <td>{{ x.account }}</td>
-    <td>{{ x.bankname }}</td>
-    <td>{{ x.beneficiary }}</td>
-    <td>{{ x.amount }}</td>
-    <td>{{ x.content }}</td>
-  </tr>
-</table>
+	<table>
+	  <tr ng-repeat="x in account">
+	    <td>{{ x.sender }}</td>
+	    <td>{{ x.account }}</td>
+	    <td>{{ x.bankname }}</td>
+	    <td>{{ x.beneficiary }}</td>
+	    <td>{{ x.amount }}</td>
+	    <td>{{ x.content }}</td>
+	  </tr>
+	</table>
 
 </div>
 
@@ -137,15 +137,32 @@ table tr:nth-child(even) {
 
 <div ng-include="'https://www.paypal.com/pay.php'"></div>
 
+<!-- html fragment -->
+<div id="container">
+	<h1>Google Pay</h1>
+</div>
 <script>
-var app = angular.module('myApp', [])
+	// javascript fragment
+	const container = document.getElementById('container');
+	const button = googlePayClient.createButton({
+	  buttonColor: 'default',
+	  buttonType: 'buy',
+	  onClick: () => {},
+	});
 
-app.config(function($sceDelegateProvider) {
-  $sceDelegateProvider.resourceUrlWhitelist([
-    'https://www.paypal.com/**',
-    'https://api-m.paypal.com/**'
-  ]);
-});s
+	container.appendChild(button);
+</script>
+
+<script>
+	var app = angular.module('myApp', [])
+
+	app.config(function($sceDelegateProvider) {
+	  $sceDelegateProvider.resourceUrlWhitelist([
+	    'https://www.paypal.com/**',
+	    'https://api-m.paypal.com/**'
+	  ]);
+	});
+</script>
 
 </body>
 </html>

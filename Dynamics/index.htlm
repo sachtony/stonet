@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/6380ada59c.js" crossorigin="anonymous"></script>
+</head>
+<body id="sachtony">
+    <h1>Getting server updates</h1>
+    <div id="result"></div>
 
+    <script>
+    if(typeof(EventSource) !== "undefined") {
+      var source = new EventSource("ODataV4Metadata.xml");
+      source.onmessage = function(event) {
+        document.getElementById("result").innerHTML += event.data + "<br>";
+      };
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+    }
+    </script>
+
+</body>
+</html>

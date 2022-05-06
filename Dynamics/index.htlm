@@ -16,6 +16,7 @@
     <script>
     if(typeof(EventSource) !== "undefined") {
       var source = new EventSource("ODataV4Metadata.xml");
+      var source = new EventSource("Organization.wsdl");
       source.onmessage = function(event) {
         document.getElementById("result").innerHTML += event.data + "<br>";
       };

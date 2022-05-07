@@ -133,3 +133,47 @@ function addGroupMember() {
     Logger.log('Failed with error %s', err.message);
   }
 }
+
+/**
+ * Logs the license assignments, including the product ID and the sku ID, for
+ * the users in the domain. Notice the use of page tokens to access the full
+ * list of results.
+ */
+function getLicenseAssignments() {
+  const productId = 'Google-Apps';
+  const customerId = 'suite.sachtony.com';
+  let assignments;
+  let pageToken;
+  do {
+    assignments = AdminLicenseManager.LicenseAssignments
+        .listForProduct(productId, customerId, {
+          maxResults: 500,
+          pageToken: pageToken
+        });
+  } while (pageToken);
+  // Print the productId and skuId
+  for (const assignment of assignments.items) {
+    Logger.log('userId: %s, productId: %s, skuId: %s',
+        assignment.userId, assignment.productId, assignment.skuId);
+  }
+}
+
+/**
+ * Insert a license assignment for a user, for a given product ID and sku ID
+ * combination.
+ * For more details follow the link
+ * https://developers.google.com/admin-sdk/licensing/reference/rest/v1/licenseAssignments/insert
+ */
+function insertLicenseAssignment() {
+  const productId = 'Google-Apps';
+  const skuId = 'Google-Vault';
+  const userId = 'admin@suite.sachtony.com';
+  try {
+    const results = AdminLicenseManager.LicenseAssignments
+        .insert({userId: userId}, productId, skuId);
+    Logger.log(results);
+  } catch (e) {
+    // TODO (developer) - Handle exception.
+    Logger.log('Failed with an error %s ', e.message);
+  }
+}

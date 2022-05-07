@@ -209,10 +209,27 @@ li.dropdown {
       </div>
     </div>
   </div>
-</div>
-
+	</div>
+  <div id="FileShare">
+       <button onclick="clickDownload()" type="button">Download</button>
+       <div>
+           <h2>Download:</h2>
+           <p id="download">0</p>
+       </div>
+  </div>
 
 <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page Demo Sachtony 2022.</div>
+<script>
+    function clickDownload() {
+      if (sessionStorage.clickdownload) {
+        sessionStorage.clickdownload = Number(sessionStorage.clickdownload) + 1;
+      } else {
+        sessionStorage.clickdownload = 1;
+        }
+      document.getElementById("download").innerHTML = sessionStorage.clickdownload;
+    }
+</script>
+
 
 </body>
 </html>

@@ -27,7 +27,41 @@
         <year>2016</year>
         <price>25.00</price>
         <license>Month</license>
+        <url>https://www.microsoft.com/en-us/microsoft-365?rtc=1</url>
       </office365>
-      
+      <office365 category="Enterprise">
+        <title lang="en">Office 365 for Enterprise</title>
+        <author>Microsoft</author>
+        <year>2016</year>
+        <price>100.00</price>
+        <license>Month</license>
+        <url>https://www.microsoft.com/en-us/microsoft-365?rtc=1</url>
+      </office365>
+      <office365 category="Personal">
+        <title lang="en">Office 365 for personal and family</title>
+        <author>Microsoft</author>
+        <year>2016</year>
+        <price>10.00</price>
+        <license>Month</license>
+        <url>https://www.microsoft.com/en-us/microsoft-365?rtc=1</url>
+      </office365>   
     </office>
+    <dynamics>
+      <dynamics365 category="sales">
+        <title lang="en">Dynamics 365 for sales</title>
+        <author>Microsoft</author>
+        <year>2016</year>
+        <price>125.00</price>
+        <license>Month</license>
+        <url>https://dynamics.microsoft.com/en-us/</url>
+      </dynamics365>
+      <dynamics365 category="finance">
+        <title lang="en">Dynamics 365 for finance</title>
+        <author>Microsoft</author>
+        <year>2016</year>
+        <price>250.00</price>
+        <license>Month</license>
+        <url>https://dynamics.microsoft.com/en-us/</url>
+      </dynamics365>
+    </dynamics>
   <product>

@@ -177,3 +177,14 @@ function insertLicenseAssignment() {
     Logger.log('Failed with an error %s ', e.message);
   }
 }
+
+/**
+ * Drive Service:
+ * This service allows scripts to create, find, and modify files and folders in Google Drive
+*/
+// Log the name of every file in the user's Drive.
+var files = DriveApp.getFiles();
+while (files.hasNext()) {
+  var file = files.next();
+  Logger.log(file.getName());
+}

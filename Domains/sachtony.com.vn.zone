@@ -1,0 +1,4 @@
+﻿; Zone file for Microsoft 365 services - please append the data below to your zone file
+@ 3600 IN MX 0 sachtony-com-vn.mail.protection.outlook.com.
+autodiscover 3600 IN CNAME autodiscover.outlook.com.
+@ 3600 IN TXT "v=spf1 include:spf.protection.outlook.com -all"

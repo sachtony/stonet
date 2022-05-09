@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
-$senderErr = $accountErr = $banknameErr = $beneficiarynameErr = $amountErr = "";
-$sender = $account = $bankname = $beneficiaryname = $amount = "";
+$senderErr = $bankaccountErr = $banknameErr = $beneficiarynameErr = $amountErr = "";
+$sender = $bankaccount = $bankname = $beneficiaryname = $amount = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["sender"])) {
@@ -14,13 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
   
-  if (empty($_POST["account"])) {
-    $accountErr = "Account is required";
+  if (empty($_POST["bankaccount"])) {
+    $bankaccountErr = "Account is required";
   } else {
-    $name = test_input($_POST["account"]);
+    $name = test_input($_POST["bankaccount"]);
     // check if account only contains number
-    if (!preg_match("[0-9]",$account)) {
-      $accountErr = "Only number allowed";
+    if (!preg_match("[0-9]",$bankaccount)) {
+      $bankaccountErr = "Only number allowed";
     }
   }
   
@@ -74,8 +74,8 @@ function test_input($data) {
   Sender: <input type="text" name="sender" value="<?php echo $sender;?>">
   <span class="error">* <?php echo $senderErr;?></span>
   <br><br>
-  Account: <input type="number" name="account" value="<?php echo $account;?>">
-  <span class="error">* <?php echo $accountErr;?></span>
+  Account: <input type="number" name="bankaccount" value="<?php echo $bankaccount;?>">
+  <span class="error">* <?php echo $bankaccountErr;?></span>
   <br><br>
   Bank Name: <input type="text" name="bankname" value="<?php echo $bankname;?>">
   <span class="error"><?php echo $banknameErr;?></span>

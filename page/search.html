@@ -25,6 +25,20 @@ header {
   color: white;
 }
 
+input[type=search] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 22px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+
  body {
   margin: 0;
   background-color:#333
@@ -57,9 +71,7 @@ style="background-color:#333">
 </canvas>
 
 <form id="sform" action="/gsearch.php">
-    <label for="gsearch">Search Google:</label>
-    <input type="search" id="gsearch" name="gsearch">
-    <input type="submit" value="Submit">
+    <input for="gsearch" type="gsearch" name="gsearch" placeholder="Google Search..">
  </form>
 
 </div>

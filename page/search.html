@@ -10,6 +10,21 @@
   <script src="https://kit.fontawesome.com/6380ada59c.js" crossorigin="anonymous"></script>
 </head>
 <style>
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+/* Style the form */
+#sform {
+  font-size: 22px;
+  color: white;
+}
+
  body {
   margin: 0;
   background-color:#333
@@ -19,24 +34,38 @@
   border: none;
   text-align: center;
 }
+  
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
 
 }
 
 </style>
 <body>
+  <header id="header">
+   <h2>Header</h2>
+  </header>
 <div class="center">
 
 <canvas id="canvas" width="90" height="90"
 style="background-color:#333">
 </canvas>
 
-<form action="/gsearch.php">
+<form id="sform" action="/gsearch.php">
     <label for="gsearch">Search Google:</label>
     <input type="search" id="gsearch" name="gsearch">
     <input type="submit" value="Submit">
  </form>
 
 </div>
+<footer id="footer">
+  <p>Footer</p>
+</footer>
 
 <script>
 var canvas = document.getElementById("canvas");

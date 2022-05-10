@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://kit.fontawesome.com/6380ada59c.js" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $.get("#writesmail.", function(data, status){
+        alert("data + "\nStatus: " + status);
+      });
+    });
+});
+</script>
 </head>
 <style>
  body {
@@ -56,8 +65,8 @@ table tr:nth-child(even) {
 </style>
 <body id="sachtony">
   <ul>
+    <li><a href="#writemail"><button>Write Mail</button> </a></li>
       <li><a href="#inbox">Inbox</a></li>
-      
       <li><a href="#starred">Starred</a></li>
       <li><a href="#snoozed">Snoozed</a></li>
       <li><a href="#sent">Send</a></li>
@@ -75,6 +84,18 @@ table tr:nth-child(even) {
 
 <div id="mail" ng-include="'https://mail.google.com/include.php'">
   
+</div>
+<div id="writemail">
+    <form action="#writeemail">
+      <label for="email">From:</label>
+      <input type="email" id="account" name="email"><br><br>
+      <label for="email">to:</label>
+      <input type="email" id="email" name="email" autocomplete="off"><br><br>
+      <textarea name="message" style="width:600px; height:400px;"></textarea>
+      <br><br>
+      <input type="submit" value="Send">
+    </form>
+    
 </div>
 
 <script>

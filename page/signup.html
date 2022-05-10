@@ -74,7 +74,13 @@ table tr:nth-child(even) {
     placeholder="123-456-7890"
     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" autocomplete="off" required><br><br>
+    <input type="email" id="email" name="email" autocomplete="off" required><br><br>  
+    <input type="radio" id="shop" name="users_type" value="Shop">
+    <label for="shop">Shop online</label><br>
+    <input type="radio" id="developer" name="users_type" value="partner">
+    <label for="partner">Developer</label><br>
+    <input type="radio" id="users" name="users_type" value="Users">
+    <label for="users">Users</label><br><br>
     <input type="submit" value="Submit">   
   </form>
   

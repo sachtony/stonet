@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://kit.fontawesome.com/6380ada59c.js" crossorigin="anonymous"></script>
+	<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#balance").toggle();
+  });
+  $("#btnadd").click(function(){
+    alert("Add money: " + $("#addmoney").html());
+  });
+   $("#btnwra").click(function(){
+    alert("Withdraw: " + $("#withdraw").html());
+  });
+});
+</script>
 </head>
 <style>
 table, th , td  {
@@ -167,6 +180,31 @@ table tr:nth-child(even) {
 		</div>
 		<script src="https://github.com/sachtony/stonet/tree/main/bank/online.js" crossorigin="anonymous"></script>
 	</div>
+
+<div id="myaccount">
+      <h4>Your Balance</h4>
+      <div  id="balance">
+      <?php
+
+      $x = 0.51;
+
+      echo $x;
+      echo "<br>"
+      ?>
+      </div>
+      <button>shown/hidden</button>
+
+      <div  id="transfer">
+          <div  id="addmoney">
+          </div>
+
+          <div  id="withdrew">
+          </div>
+      </div>
+      <button id="btnadd">Add Money</button>
+      <button id="btnwra">Withdraw</button>
+  </div>
+
 </div>
 <script>
 	// javascript fragment
@@ -199,6 +237,13 @@ async function getText(file) {
   let myText = await myObject.text();
   document.getElementById("pay").innerHTML = myText;
 }
+</script>
+
+<script>
+function getBalance($x, $i) {
+  return $x + $i;
+}
+document.getElementById("balance").innerHTML = getBalance($x);
 </script>
 
 </body>

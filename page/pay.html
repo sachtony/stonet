@@ -240,7 +240,8 @@ async function getText(file) {
 </script>
 
 <script>
-function getBalance($x, $i) {
+  var $i = "$amount";
+  function getBalance($x, $i) {
   return $x + $i;
 }
 document.getElementById("balance").innerHTML = getBalance($x);

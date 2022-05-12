@@ -1,4 +1,7 @@
 # Sachtony
-Build Software, Network, Security connect and education
+Build Software, solution, Network, Security connect and education
 
-# Documents
+# Partner
+## Microsoft
+## Google
+## Paypal

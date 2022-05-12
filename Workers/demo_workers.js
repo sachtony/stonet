@@ -7,6 +7,21 @@ function timedCount() {
 timedCount();
 
 var accountid = "818356f2dccbaaeaba2b09d356fc9441";
+async function recordService(accountId, service_id, price) {
+  const result = await env.production([
+    [
+      'UPDATE account get recordpurchase amount = quantity*price',
+      { $quantity: quantity, $price: price },
+      'UPDATE account SET account balance = balance + $amount WHERE accountid = $accountid',
+      { $amount: amount, $accountid: accountid },
+      ],
+    [
+      'UPDATE services SET total_sales = total_sales + $amount WHERE service_id = service_id',
+      { $amount: amount, $service_id: serviceId },
+      ],
+    ])
+  return result
+}
 elem = document.getElementById("worker"); // Find an element 
 elem.innerHTML = accountid;           // Display x in the element
 

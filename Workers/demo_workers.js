@@ -10,7 +10,7 @@ var accountid = "818356f2dccbaaeaba2b09d356fc9441";
 async function recordService(accountId, service_id, price) {
   const result = await env.production([
     [
-      'UPDATE account get recordpurchase amount = quantity*price',
+      'UPDATE account get set recordpurchase amount = quantity*price',
       { $quantity: quantity, $price: price },
       'UPDATE account SET account balance = balance + $amount WHERE accountid = $accountid',
       { $amount: amount, $accountid: accountid },

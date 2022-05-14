@@ -1,6 +1,7 @@
 set src="https://kit.fontawesome.com/6380ada59c.js";
-function getUpdate(icon) {
-  document.getElementById("fortawesome").innerHTML = icon;
+function getUpdate(icons) {
+  var scr = "https://npm.fontawesome.com/**";
+  document.getElementById("fortawesome").innerHTML = icons;
 }
 
-myIcon();
+myIcons();

@@ -1,7 +1,10 @@
-# Sachtony
-Build Software, solution, Network, Security connect and education
+# Stonet
+Build Software, solution, Network, Security connect and education, developer by Sachtony
 
-# Partner
+# Source code:
+git clone https://github.com/sachtony/stonet.git
+
+# Builder with:
 ## Microsoft
 ## Google
 ## Paypal

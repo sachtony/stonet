@@ -53,6 +53,78 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
   background-color: #ffffff;
 }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=tel]:focus {
+  border: 3px solid #555;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=email]:focus {
+  border: 3px solid #555;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+            width: 55%;
+            background-color: #333;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
 </style>
 <body id="sachtony">
 
@@ -76,9 +148,9 @@ table tr:nth-child(even) {
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" autocomplete="off" required><br><br>  
     <input type="radio" id="shop" name="users_type" value="Shop">
-    <label for="shop">Shop online</label><br>
+    <label for="shop">Shop online</label>
     <input type="radio" id="developer" name="users_type" value="partner">
-    <label for="partner">Developer</label><br>
+    <label for="partner">Developer</label>
     <input type="radio" id="users" name="users_type" value="Users">
     <label for="users">Users</label><br><br>
     <input type="submit" value="Submit">   

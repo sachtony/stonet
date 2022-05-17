@@ -2,9 +2,11 @@
 using namespace std;
 
 int main() {
-  bool isCodingFun = true;
-  bool isFishTasty = false;
-  cout << isCodingFun << "\n"; // Outputs 1 (true)
-  cout << isFishTasty; // Outputs 0 (false)
-  return 0;
+    bool x = true;
+    bool i = true;
+    bool y = false;
+    cout << x << "\n";
+    cout << i << "\n";
+    cout << y;
+    return 0;
 }

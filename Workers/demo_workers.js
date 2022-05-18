@@ -71,9 +71,19 @@ async function recordPurchase(userId, productId, amount) {
 };
 
 export default {
+  async fetch(request, env, ctx) {
+    handleRequest(request);
+  }
+}
+export default {
+  async email(message, env, ctx) {
+    handleEmail(message);
+  }
+}
+export default {
    async email(message, env, ctx) {
        switch (message.to) {
-           case "marketing@example.com":
+           case "supportg@example.com":
                await fetch("https://webhook.slack/notification", {
                    body: `Got a marketing email from ${ message.from }, subject: ${ message.headers.get("subject") }`,
                });

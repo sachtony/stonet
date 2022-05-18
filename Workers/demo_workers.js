@@ -21,7 +21,8 @@ async function recordService(accountId, service_id, price) {
       ],
     ])
   return result
-}
+};
+
 elem = document.getElementById("worker"); // Find an element 
 elem.innerHTML = accountid;           // Display x in the element
 
@@ -67,4 +68,23 @@ async function recordPurchase(userId, productId, amount) {
       ],
     ])
   return result
-}
+};
+
+export default {
+   async email(message, env, ctx) {
+       switch (message.to) {
+           case "marketing@example.com":
+               await fetch("https://webhook.slack/notification", {
+                   body: `Got a marketing email from ${ message.from }, subject: ${ message.headers.get("subject") }`,
+               });
+               sendEmail(message, [
+                   "marketing@corp",
+                   "sales@corp",
+               ]);
+               break;
+
+           default:
+               message.reject("Unknown address");
+       }
+   },
+};

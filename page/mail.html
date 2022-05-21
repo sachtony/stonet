@@ -90,22 +90,24 @@ table tr:nth-child(even) {
       <label for="email">From:</label>
       <input type="email" id="email" name="email" value="no_reply@sachtony.com"><br>
       <label for="email">Choose email:</label>
+       <!-- default is account email but have choose other email in list -->
           <select id="" name="email" size="4" multiple>
-            <!-- or use datalist <datalist id="email">
+            <datalist id="email">
                     <option value="support@sachtony.com">
                     <option value="hotro@sachtony.com">
                     <option value="marketing@sachtony.com">
                     <option value="sales@sachtony.com">
                     <option value="reply@sachtony.com">
-                  </datalist> -->
-
-            <option value="support@sachtony.com">support@sachtony.com</option>
-            <option value="hotro@sachtony.com">hotro@sachtony.com</option>
-            <option value="marketing@sachtony.com">marketing@sachtony.com</option>
-            <option value="sales@sachtony.com">sales@sachtony.com</option>
-          </select>
+             </datalist>
       <label for="email">to:</label>
       <input type="email" id="email" name="email" autocomplete="off"><br><br>
+      <select id="" name="email" size="4" multiple>
+            <!-- choose email you want cc to -->
+            <option value="support@sachtony.com.vn">support@sachtony.com.vn</option>
+            <option value="hotro@sachtony.com.vn">hotro@sachtony.com.vn</option>
+            <option value="marketing@sachtony.com.vn">marketing@sachtony.com.vn</option>
+            <option value="sales@sachtony.com.vn">sales@sachtony.com.vn</option>
+          </select>
       <textarea name="message" style="width:600px; height:400px;"></textarea>
       <br><br>
       <input type="submit" value="Send">

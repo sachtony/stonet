@@ -71,7 +71,7 @@ function test_input($data) {
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Sender: <input type="text" name="sender" value="<?php echo $sender;?>">
+  From sender: <input type="text" name="sender" value="<?php echo $sender;?>">
   <span class="error">* <?php echo $senderErr;?></span>
   <br><br>
   Account: <input type="number" name="bankaccount" value="<?php echo $bankaccount;?>">

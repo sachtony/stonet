@@ -16,17 +16,47 @@
 <div id="bank"></div>
 
 <script>
-let text = '{"bank":[' +
-'{"bankName":"Vietbank","swiftcode":"" },' +
-'{"bankname":"Vietcombank","swiftcode":"" },' +
-'{"bankname":"Sacombank","swiftcode":"" },' +
-'{"bankname":"Mbbank","swiftcode":"" },' +
-'{"bankname":"Eximbank","swiftcode":"" }]}';
-
-const obj = JSON.parse(text);
-document.getElementById("bank").innerHTML =
-obj.bank[1].bankname + " " + obj.bank[1].swiftcode;
-</script>
+   let Code = "SGTTVNVX";
+        
+   switch (Code) {
+          case "ASCBVNVX":
+            text = "Asia Commercial Bank (ACB)";
+            break;
+          case "BFTVVNVX":
+            text = "Bank for Foreign Trade of Vietnam (VietcomBank)";
+            break;
+          case "ICBVVNVX":
+            text = "Vietnam Bank for Industry and Trade (VietinBank)";
+            break;
+          case "VTCBVNVX":
+            text = "Vietnam Technological And Commercial Joint Stock Bank (Techcombank)";
+            break;
+          case "BIDVVNVX":
+            text = "Bank for Investment & Dof Vietnam (BIDV)";
+            break;
+          case "VPBKVNVX":
+            text = "Vietnam Prosperity Bank (VPBank)";
+            break;
+          case "VBAAVNVX":
+            text = "Vietnam Bank For Agriculture and Rural Development (Agribank)";
+            break;
+          case "EBVIVNVX":
+            text = "Vietnam Export Import Commercial Joint Stock Bank (Eximbank)";
+            break;
+          case "SGTTVNVX":
+            text = "Saigon Thuong Tin Commercial Joint Stock Bank (Sacombank)";
+            break;
+          case "MSCBVNVX":
+            text = "Military Commercial Joint Stock Bank (MB Bank)";
+            break;
+          case "VNTTVNVX":
+            text = "Viet Nam Thuong Tin Commercial Joint Stock Bank (Vietbank)";
+            break;
+          case "SHBKVNVX":
+            text = "SHINHAN Bank";
+        }
+        document.getElementById("bank").innerHTML = text;
+    </script>
 
 </body>
 </html>

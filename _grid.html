@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html id="sachtony" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6380ada59c.js" crossorigin="anonymous"></script>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header { grid-area: header; }
+    .menu { grid-area: menu; }
+    .main { grid-area: main; }
+    .right { grid-area: right; }
+    footer { grid-area: footer; }
+
+    header {
+        grid-area: header;
+        margin: 0px 0px 0px 0px;
+        top: 0;
+    }
+    .menu {
+        grid-area: menu;
+        margin: 0px 0px 0px 0px;
+    }
+    .main {
+        grid-area: main;
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+    }
+    footer {
+        grid-area: footer;
+        margin: 0px 0px 0px 0px;
+        bottom: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 0px 0px;
+        grid-template-areas: 'header header header header header header'
+                             'main main main main main main'
+                             'footer footer footer footer footer footer';
+        background-color: #000;
+        padding: 0px;
+    }
+        .grid-container > div {
+            background-color: none;
+            text-align: center;
+            padding: 0px;
+            font-size: 16px;
+        }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #999;
+        position: relative;
+    }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav a {
+            float: right;
+            color: #000;
+            padding: 7px 12px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            background: #999;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+            .topnav a:hover {
+                background-color: #222;
+                color: black;
+            }
+
+            .active {
+                background-color: #999;
+                color: #111;
+            }
+
+        .mobile-container {
+            padding: 0px;
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #ddd;
+            color: #111;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        li {
+            list-style-type: none;
+        }
+    /* Add a black background color to the bottom navigation */
+    .botnav {
+        background-color: #333;
+        width: 100%;
+        overflow: hidden;
+        position: fixed; 
+        bottom: 0;
+    }
+
+        /* Style the links inside the navigation bar */
+        .botnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 2px;
+            text-decoration: none;
+            font-size: 17px;
+                
+        }
+
+            /* Change the color of links on hover */
+            .botnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .botnav a.active {
+                background-color: #04AA6D;
+                color: white;
+            }    
+       
+</style>
+</head>
+<body>
+    <div class="grid-container" id="746F6E79-6475-6F6E-6767-6C6F62616C73">
+        <header id="">
+            <div class="topnav" id="myLinks">
+                <a href="#"><i class="fa fa-battery-full"></i></a>
+                <a href="#"><i class="fa fa-wifi"></i></a>
+                <a href="#"><i class="fa fa-bluetooth"></i></a>
+                <a href="#"><i class="fa fa-signal"></i></a>
+                        
+            </div>     
+        </header>
+        <menu>
+            <p>Menu</p>
+        </menu>
+        <right>
+            <p>Right</p>
+        </right> 
+        <div class="main">
+            <div class="mobile-container">
+                <ul>
+                    <li><a><i class="fa fa-recycle"></i></a></li>
+                    <li><a><i class="fa fa-envelope"></i></a></li>
+                    <li><a><i class="fa fa-chrome"></i></a></li> 
+                    <li><a><i class="fa fa-google"></i></a></li>
+                    <li><a><i class="fa fa-paypal"></i></a></li>
+                    <li><a><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a><i class="fa fa-amazon"></i></a></li>
+                    <li><a><i class="fa fa-edge"></i></button></div>
+                    <li><a><i class="fa fa-volume-control-phone"></i></a></li>
+                    <li><a><i class="fa fa-phone"></i></a></li>
+                    <li><a><i class="fa fa-folder"></i></a></li>
+                    <li><a><i class="fa fa-address-book-o"></i></a></li>
+                    <li><a><i class="fa fa-camera"></i></a></li>
+                    <li><a><i class="fa fa-calendar"></i></a></li>
+                    <li><a><i class="fa fa-sliders"></i></a></li>
+                    <li><a><i class="fa fa-microphone"></a></li>
+                    <li><a><i class="fa fa-cloud"></i></a></li>
+                    <li><a><i class="fa fa-search"></i></a></li>
+                    <li><a><i class="fa fa-message"></i></a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <footer id="6380ada59c">
+            <div class="botnav">
+                <ul>
+                    <li><a href="#"><button><i class="fa fa-commenting-o"></i></button></a></li>
+                    <li><a href="#"><button><i class="fa fa-phone"></i></button></a></li>
+                    <li><a href="#"><button><i class="fa fa-camera"></i></button></a></li>
+                    <li><a href="#"><button"><i class="fa fa-address-book-o"></i></button></a></li>
+                    <li><a href="#"><button><i class="fa fa-map-o"></i></button></a></li>
+                </ul>   
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

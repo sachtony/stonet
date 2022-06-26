@@ -2,27 +2,27 @@
 using namespace std;
 
 int main() {
-  int bankcode = 1;
-  switch (bankcode) {
-  case 1:
+  int code = 56356001;
+  switch (code) {
+  case 56356001:
     cout << "Vietbank";
     break;
-  case 2:
+  case 60303001:
     cout << "Sacombank";
     break;
-  case 3:
+  case 79203010:
     cout << "Vietcombank";
     break;
-  case 4:
+  case 79305008:
     cout << "Eximbank";
     break;
-  case 5:
+  case 79311005:
     cout << "Mbbank";
     break;
-  case 6:
+  case 51201001:
     cout << "Vietinbank";
     break;
-  case 7:
+  case 36307001:
     cout << "Acb";
     break;
   default:

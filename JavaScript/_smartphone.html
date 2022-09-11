@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="smartphone">
+  <div class="content">
+    <div  id="icon">
+      <svg class="fa fa-sachtony" xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+        <defs>
+          <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(216,239,31);stop-opacity:0" />
+            <stop offset="100%" style="stop-color:rgb(234, 236, 235);stop-opacity:9" />
+          </radialGradient>
+          <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(199, 204, 199);stop-opacity:0" />
+            <stop offset="100%" style="stop-color:rgb(253, 253, 156);stop-opacity:9" />
+          </radialGradient>
+        </defs>
+        <line id="nons1" x1="2" y1="61" x2="50" y2="12" style="stroke:#F65314;stroke-width:2" />
+        <line id="nons2" x1="50" y1="12" x2="98" y2="61" style="stroke:#F65314;stroke-width:2" />
+        <polyline id="vm" points="2,61 8,31 20,32 19,17 31,22 50,2 69,22 81,17 80,33 92,31 98,61" style="fill:url(#grad2); stroke:#4285F4; stroke-width: 1" />
+        <circle id="tron" cx="50" cy="50" r="48" stroke="#34A853" stroke-width="2" fill="none" />
+        <ellipse id="elip" cx="50" cy="61" rx="47" ry="19" style="fill:url(#grad1); stroke:#FBBC15; stroke-width: 2" />
+        <text id="brname" x="7" y="65" fill="#457725">SACHTONY</text>
+        Your browser does not support, close browser and reopen!
+      </svg>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

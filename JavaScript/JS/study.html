@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi ảnh, màu ảnh..</title>
+    <script src="/JS/stud.js"></script>
+    <style>
+        h2{
+            text-transform: uppercase;
+        }
+        #Image{
+            display: flex;
+        }
+        #Image>div{
+            width: 40%;
+        }
+        #Image div.img-gallery{
+            display: flex;
+            
+        }
+        div.img-gallery>div{
+            width: 20%;
+        }
+        img{
+            width: 100%;
+        }
+        #Image>div:last-child>div{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+        
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <div id="Image">
+        <div>
+            <img id="changeImg" src="/images/galaxys8/Black_1.jpg" alt="">
+            <div class="img-gallery">
+                <div><img src="/images/galaxys8/Black_1.jpg" alt=""></div>
+                <div><img src="/images/galaxys8/Black_2.jpg" alt=""></div>
+                <div><img src="/images/galaxys8/Black_3.jpg" alt=""></div>
+                <div><img src="/images/galaxys8/Black_4.jpg" alt=""></div>
+                <div><img src="/images/galaxys8/Black_5.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <h2>galaxys8</h2>
+            <div><a rel="Black" href="#" style="background-color: black;"></a></div>
+            <div><a rel="Blue" href="#" style="background-color: blue;"></a></div>
+            <div><a rel="Gold" href="#" style="background-color: gold;"></a></div>
+            <div><a rel="Silver" href="#" style="background-color: silver;"></a></div>
+        </div>
+    </div>
+</body>
+</html>

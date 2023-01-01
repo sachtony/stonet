@@ -1,0 +1,13 @@
+﻿; Zone file for Microsoft 365 services - please append the data below to your zone file
+sachtony.shop. IN A 216.239.32.51.
+sachtony.shop. IN A 216.239.34.51.
+sachtony.shop. IN A 216.239.36.51.
+sachtony.shop. IN A 216.239.38.51.
+sachtony.shop. IN A 216.239.32.16.
+sachtony.shop. IN A 216.239.34.16.
+sachtony.shop. IN A 216.239.36.16.
+sachtony.shop. IN A 216.239.38.16.
+sachtony.shop. IN A 2001:4860:4802:0032:0000:0000:0000:0015.
+sachtony.shop. IN A 2001:4860:4802:0034:0000:0000:0000:0015.
+sachtony.shop. IN A 2001:4860:4802:0036:0000:0000:0000:0015.
+sachtony.shop. IN A 2001:4860:4802:0038:0000:0000:0000:0015.

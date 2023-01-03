@@ -1,4 +1,7 @@
-﻿; Zone file for Microsoft 365 services - please append the data below to your zone file
+sachtony.com.vn. IN NS janet.ns.cloudflare.com.
+sachtony.com.vn. IN NS will.ns.cloudflare.com.
+
+; Zone file for Microsoft 365 services - please append the data below to your zone file
 @ 3600 IN MX 0 sachtony-com-vn.mail.protection.outlook.com.
 autodiscover 3600 IN CNAME autodiscover.outlook.com.
 @ 3600 IN TXT "v=spf1 include:spf.protection.outlook.com -all"

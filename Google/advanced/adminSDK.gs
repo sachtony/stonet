@@ -7,8 +7,8 @@ function listAllUsers() {
   let page;
   do {
     page = AdminDirectory.Users.list({
-      domain: 'suite.sachtony.com',
-      domain: 'vn.sachtony.com',
+      domain: 'admin.sachtony.shop',
+      domain: 'sachtony.com',
       orderBy: 'givenName',
       maxResults: 100,
       pageToken: pageToken
@@ -32,7 +32,7 @@ function listAllUsers() {
  */
 function getUser() {
   // TODO (developer) - Replace userEmail value with yours
-  const userEmail = 'admin@vn.sachtony.com';
+  const userEmail = 'admin@sachtony.shop';
   try {
     const user = AdminDirectory.Users.get(userEmail);
     Logger.log('User data:\n %s', JSON.stringify(user, null, 2));
@@ -50,7 +50,7 @@ function getUser() {
 function addUser() {
   let user = {
     // TODO (developer) - Replace primaryEmail value with yours
-    primaryEmail: 'admin@vn.sachtony.com',
+    primaryEmail: 'admin@sachtony.shop',
     name: {
       givenName: 'Admin',
       familyName: 'Sachtony'
@@ -73,9 +73,9 @@ function addUser() {
  */
 function createAlias() {
   // TODO (developer) - Replace userEmail value with yours
-  const userEmail = 'admin@vn.sachtony.com';
+  const userEmail = 'admin@sachtony.shop';
   let alias = {
-    alias: 'admin@suite.sachtony.com'
+    alias: 'admin@sachtony.com'
   };
   try {
     alias = AdminDirectory.Users.Aliases.insert(alias, userEmail);
@@ -95,7 +95,7 @@ function listAllGroups() {
   let page;
   do {
     page = AdminDirectory.Groups.list({
-      domain: 'groups.sachtony.com',
+      domain: 'groups.sachtony.shop',
       maxResults: 100,
       pageToken: pageToken
     });
@@ -118,9 +118,9 @@ function listAllGroups() {
  */
 function addGroupMember() {
   // TODO (developer) - Replace userEmail value with yours
-  const userEmail = 'admin@vn.sachtony.com';
+  const userEmail = 'admin@sachtony.shop';
   // TODO (developer) - Replace groupEmail value with yours
-  const groupEmail = 'admin@groups.sachtony.com';
+  const groupEmail = 'admin@groups.sachtony.shop';
   const member = {
     email: userEmail,
     role: 'MEMBER'
@@ -141,7 +141,7 @@ function addGroupMember() {
  */
 function getLicenseAssignments() {
   const productId = 'Google-Apps';
-  const customerId = 'suite.sachtony.com';
+  const customerId = 'sachtony.com';
   let assignments;
   let pageToken;
   do {
@@ -167,7 +167,7 @@ function getLicenseAssignments() {
 function insertLicenseAssignment() {
   const productId = 'Google-Apps';
   const skuId = 'Google-Vault';
-  const userId = 'admin@suite.sachtony.com';
+  const userId = 'admin@sachtony.com';
   try {
     const results = AdminLicenseManager.LicenseAssignments
         .insert({userId: userId}, productId, skuId);

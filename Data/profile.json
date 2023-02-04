@@ -6,23 +6,23 @@
         "profileImage": "https://res.cloudinary.com/sachtony/image/upload/v1669001371/sachtony-brands_fbcbuy.svg"
     },
     "createdUtc": "2016-11-30T06:08:39Z",
-    "viewUrl": "https://adaptivecards.io",
+    "viewUrl": "https://www.sachtony.shop",
     "properties": [
         {
             "key": "Board",
-            "value": "Adaptive Cards"
+            "value": ""
         },
         {
             "key": "List",
-            "value": "Backlog"
+            "value": ""
         },
         {
             "key": "Assigned to",
-            "value": "Sachtony"
+            "value": "Sachtony Corporation"
         },
         {
             "key": "Due date",
-            "value": "Not set"
+            "value": ""
         }
     ]
 }

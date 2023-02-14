@@ -4,3 +4,8 @@ app.controller('myCtrl', function($scope, $http) {
       $scope.index = response.data;
   });
 });
+app.config(function($sceDelegateProvider) {
+  $sceDelegateProvider.resourceUrlWhitelist([
+    'https://cdnjs.sachtony.shop/**'
+  ]);
+});

@@ -1,6 +1,8 @@
 ﻿; Zone file for Microsoft 365 services - please append the data below to your zone file
 sachtony.shop. IN NS janet.ns.cloudflare.com.
 sachtony.shop. IN NS will.ns.cloudflare.com.
+sachtony.shop. IN NS ns1.cloudinary.site.
+sachtony.shop. IN NS ns2.cloudinary.site.
 sachtony.shop. IN A 216.239.32.51.
 sachtony.shop. IN A 216.239.34.51.
 sachtony.shop. IN A 216.239.36.51.

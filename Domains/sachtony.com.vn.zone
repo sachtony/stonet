@@ -1,7 +1,7 @@
 sachtony.com.vn. IN NS janet.ns.cloudflare.com.
 sachtony.com.vn. IN NS will.ns.cloudflare.com.
-sachtony.com.vn. IN NS ns1.cloudinary.site
-sachtony.com.vn. IN NS ns2.cloudinary.site
+sachtony.com.vn. IN NS ns1.cloudinary.site.
+sachtony.com.vn. IN NS ns2.cloudinary.site.
 
 ; Zone file for Microsoft 365 services - please append the data below to your zone file
 @ 3600 IN MX 0 sachtony-com-vn.mail.protection.outlook.com.

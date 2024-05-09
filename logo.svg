@@ -1,0 +1,22 @@
+<svg class="fa fa-sachtony" id="icon" xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100"> <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+    <defs>
+        <radialGradient id="vms" cx="50%" cy="50%" r="65%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(255, 0, 255);stop-opacity:0" />
+            <stop offset="50%" style="stop-color:rgb(255, 255, 255);stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:rgb(0, 255, 0);stop-opacity:1" />              
+        </radialGradient>
+
+        <radialGradient id="ellipse" cx="0%" cy="0%" r="0%" fx="0%" fy="0%">
+            <stop offset="0%" style="stop-color:rgb(255, 0, 255);stop-opacity:0" />
+            <stop offset="50%" style="stop-color:rgb(0, 255, 0);stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+        </radialGradient>
+    </defs>
+    <line id="nons1" x1="3" y1="60" x2="50" y2="12" style="stroke:#F65316;stroke-width:1.5" />
+    <line id="nons2" x1="50" y1="12" x2="97" y2="60" style="stroke:#F65316;stroke-width:1.5" />
+    <polyline id="vm" points="3,60 8,31 20,32 19,17 31,22 50,2 69,22 81,17 80,33 92,31 97,60" style="fill:url(#vms); stroke:#4285F4; stroke-width: 1.4" />
+    <circle id="tron" cx="50" cy="50" r="48" stroke="#34A853" stroke-width="2" fill="none" />
+    <ellipse id="elip" cx="50" cy="60" rx="47" ry="19" style="fill:url(#ellipse); stroke:#FBBC15; stroke-width: 2" />
+    <text id="brands" x="7" y="65" fill="#ffffff"></text>
+    Your browser does not support, close browser and reopen or contact support!
+</svg>
